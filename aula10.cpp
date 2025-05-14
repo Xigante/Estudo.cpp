@@ -24,11 +24,22 @@ int main(){
 
         cout <<"Voce foi aprovado(a), PARABENS! "<< nome << "\n";
     }
-    else{
-        cout << "Voce foi reprovado(a),"<< nome <<" estude mais "<< "\n";
+    else if((res/2) >= 5 && (res/2) >= 6){
+        cout << "\n" << nome << " Voce esta de recuperacao, estude mais" << "\n";
     }
-
+    else if((res/2) < 4){
+        cout << "\n" << nome << " Voce foi reprovado, estude mais!" << "\n";
+    }
+    
 
 
     return 0;
 }
+
+/*
+
+>= 7 Aprovaod
+>=5 < 6 Recuperação
+< 4 Reprovado
+
+*/
